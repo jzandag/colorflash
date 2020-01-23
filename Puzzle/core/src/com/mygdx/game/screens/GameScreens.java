@@ -350,15 +350,16 @@ public class GameScreens {
     }
 
     private void correct(){
-
+        //System.out.println(hud.progress);
+        hud.setProgress(hud.getProgress()+1);
         if(hud.progress < 20){
             updateTable();
             System.out.println("correct");
             MyGdxGame.assets.get("audio/bell.wav", Sound.class).play();
-            hud.setProgress(hud.getProgress()+1);
 
         }
         else if (hud.progress == 20){
+            MyGdxGame.assets.get("audio/result.mp3", Sound.class).play();
             hud.isFinished = true;
             hud.isWin = true;
 

@@ -83,9 +83,9 @@ public class LevelClear {
         //window.debug();
         //window.getTitleLabel().
         window.add(clear).colspan(3).spaceBottom(20).row();
-        window.add(home).width(50).height(50);
-        window.add(levelBtn).width(50).height(50);
-        window.add(restart).width(50).height(50);
+        window.add(home).width(75).height(75).pad(20);
+        window.add(levelBtn).width(75).height(75).pad(20);
+        window.add(restart).width(75).height(75).pad(20);
         window.pack();
 
         /*atlas.dispose();

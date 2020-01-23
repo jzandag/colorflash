@@ -1,6 +1,7 @@
 package com.mygdx.game.levels;
 
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.audio.Sound;
 import com.mygdx.game.MyGdxGame;
 import com.mygdx.game.scenes.Hud;
 import com.mygdx.game.scenes.LevelClear;
@@ -34,6 +35,11 @@ public class Advanced extends GameScreens implements Screen {
             hud.isFinished = true;
         if(hud.isFinished){
             hud.timerStop = true;
+
+            if(!hud.isWin && hud.health >0 && hud.tune) {
+                MyGdxGame.assets.get("audio/fail.wav", Sound.class).play();
+                hud.tune=false;
+            }
 
             levelClear = new LevelClear(game,this, STAGE_LEVEL, hud.isWin);
             //Gdx.input.setInputProcessor();

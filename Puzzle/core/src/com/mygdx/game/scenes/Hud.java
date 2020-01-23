@@ -44,6 +44,7 @@ public class Hud implements Disposable {
     public boolean timerStop;
     public boolean isFinished;
     public boolean isWin;
+    public boolean tune;
 
     public Hud(SpriteBatch sb, int level){
         stageNumber = level;
@@ -52,6 +53,7 @@ public class Hud implements Disposable {
                 new Image(new Texture("img/heart.png")),
                 new Image(new Texture("img/heart.png"))
         };
+        tune = true;
         if(level == 1)
             worldTimer = 30;
         else if(level == 2)

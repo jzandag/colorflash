@@ -35,8 +35,12 @@ public class Beginner extends GameScreens implements Screen {
             hud.isFinished = true;
         if(hud.isFinished){
             hud.timerStop = true;
-            if(!hud.isWin)
+//            if(!hud.isWin)
+//
+            if(!hud.isWin && hud.health >0 && hud.tune) {
                 MyGdxGame.assets.get("audio/fail.wav", Sound.class).play();
+                hud.tune=false;
+            }
             levelClear = new LevelClear(game,this, STAGE_LEVEL, hud.isWin);
             //Gdx.input.setInputProcessor();
             stage.addActor(levelClear.window);

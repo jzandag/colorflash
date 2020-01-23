@@ -33,6 +33,7 @@ public class MyGdxGame extends Game {
 		assets.load("audio/pop.wav", Sound.class);
 		assets.load("audio/bell.wav", Sound.class);
 		assets.load("audio/fail.wav", Sound.class);
+		assets.load("audio/result.mp3", Sound.class);
 		assets.finishLoading();
 
 		music = assets.get("audio/bgmusic.mp3", Music.class);
