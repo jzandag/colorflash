@@ -1,0 +1,33 @@
+
+choices : 
+
+red
+orange
+yellow
+green
+violet
+blue
+
+1. Blue color with yellow text
+	ans blue
+2. yellow color with black text\
+	ans yellow
+3. red color with green text
+	ans red
+4. orange with red text
+5. green with blue
+6. red with blue
+7. violet with brown
+8. brown with green
+9. yellow with red
+10. blue with violet
+11. white with red
+12. blck with green
+13. orange with green
+14. green with yellow
+15. violet with orange
+16. red with orange
+17. green with violet
+18. brown with yellow
+19. yellow with red
+20. blue with white	

@@ -1,0 +1,32 @@
+{
+    "com.badlogic.gdx.graphics.Color" : {
+        "white": { "r": 1, "g": 1, "b": 1, "a": 1 },
+        "black": { "r": 0, "g": 0, "b": 0, "a": 1 }
+    },
+    "com.badlogic.gdx.graphics.g2d.BitmapFont": {
+        "boiW32": { "file": "font/boi-white32.fnt"},
+        "yoshiB32": { "file": "font/yoshiB32.fnt"},
+        "yoshiW32": { "file": "font/yoshiW32.fnt"}
+    },
+    "com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
+        "playagain": { "font": "boiW32", "fontColor": "white"},
+        "levelClear": { "font": "yoshiB32", "fontColor": "black"}
+    },
+    "com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle": {
+        "red": { "up":  "red", "down":  "red", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"},
+        "orange": { "up":  "orange", "down":  "orange", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"},
+        "blue": { "up":  "blue", "down":  "blue", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"},
+        "yellow": { "up":  "yellow", "down":  "yellow", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"},
+        "green": { "up":  "green", "down":  "green", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"},
+        "violet": { "up":  "violet", "down":  "violet", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"}
+    },
+    "com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle": {
+        "home": { "up": "home"},
+        "replay": {"up": "replay"},
+        "level": { "up": "level"}
+    },
+    "com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle": {
+        "default": { "titleFont": "yoshiB32", "titleFontColor": "black"}
+    }
+
+}
