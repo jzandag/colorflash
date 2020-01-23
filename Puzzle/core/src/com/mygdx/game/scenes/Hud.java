@@ -55,11 +55,11 @@ public class Hud implements Disposable {
         };
         tune = true;
         if(level == 1)
-            worldTimer = 30;
+            worldTimer = 60;
         else if(level == 2)
-            worldTimer = 10;
+            worldTimer = 30;
         else
-            worldTimer = 0;
+            worldTimer = 100;
         //System.out.println(level);
         timeCount = 0;
         health = 3;
