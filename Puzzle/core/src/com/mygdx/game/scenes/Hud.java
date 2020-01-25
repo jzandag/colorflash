@@ -55,11 +55,11 @@ public class Hud implements Disposable {
         };
         tune = true;
         if(level == 1)
-            worldTimer = 60;
+            worldTimer = 40;
         else if(level == 2)
-            worldTimer = 30;
+            worldTimer = 20;
         else
-            worldTimer = 100;
+            worldTimer = 60;
         //System.out.println(level);
         timeCount = 0;
         health = 3;
@@ -79,10 +79,10 @@ public class Hud implements Disposable {
 
         TextureAtlas atlas = new TextureAtlas("ui/colorBtn.pack");
         Skin skin = new Skin(Gdx.files.internal("ui/colorFlashSkin.json"),atlas);
-        if(stageNumber == 1 || stageNumber == 2)
+        if(stageNumber == 1 || stageNumber == 2 || stageNumber == 0)
             countdownLabel = new Label(String.format("%03d", worldTimer), new Label.LabelStyle(new BitmapFont(), Color.BLACK));
-        else if(stageNumber == 0)
-            countdownLabel = new Label("NO LIMIT", new Label.LabelStyle(new BitmapFont(), Color.BLACK));
+        /*else if(stageNumber == 0)
+            countdownLabel = new Label("NO LIMIT", new Label.LabelStyle(new BitmapFont(), Color.BLACK));*/
             timeLabel = new Label("TIME", new Label.LabelStyle(new BitmapFont(), Color.BLACK));
         roomLabel = new Label(MyGdxGame.TITLE, new Label.LabelStyle(new BitmapFont(), Color.BLACK));
         healthLabel = new Label(String.format("%03d", health),new Label.LabelStyle(new BitmapFont(), Color.BLACK));
@@ -110,7 +110,7 @@ public class Hud implements Disposable {
 
     public void update(float dt) {
         timeCount += dt;
-        if (stageNumber != 0){
+        if (/*stageNumber != 0*/true){
             if (timeCount >= 1 && !timerStop) {
                 if (worldTimer > 0) {
                     worldTimer--;

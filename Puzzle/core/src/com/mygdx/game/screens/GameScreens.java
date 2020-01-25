@@ -396,10 +396,10 @@ public class GameScreens {
         int count = 1;
         choiceBtns = new TextButton[]{ choice1,choice2,choice3,choice4};
         table.top();
-        table.add(query).colspan(2).center().width(Gdx.graphics.getWidth()-80).height(Gdx.graphics.getWidth()-80).padTop(80);
+        table.add(query).colspan(2).center().width(Gdx.graphics.getWidth()-80).height(Gdx.graphics.getWidth()-80).padTop(200);
         table.row();
         for(int i: btnOrder){
-            table.add(choiceBtns[i]).width((Gdx.graphics.getWidth() /2)).pad(20).spaceBottom(10).padLeft(10);
+            table.add(choiceBtns[i]).size((Gdx.graphics.getWidth() /2), Gdx.graphics.getHeight() / 10).pad(20).spaceBottom(10).padLeft(10);
             if(count % 2 == 0)
                 table.row();
             count++;

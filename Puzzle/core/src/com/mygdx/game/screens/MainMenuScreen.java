@@ -42,7 +42,8 @@ public class MainMenuScreen implements Screen {
         start.setPosition((Gdx.graphics.getWidth()/2) - start.getWidth()/2, (Gdx.graphics.getHeight()/2) - start.getHeight()/2);
 
         viewport = new FitViewport(Gdx.graphics.getWidth(),Gdx.graphics.getHeight(), new OrthographicCamera());
-
+        viewport.getCamera().position.x = Gdx.graphics.getWidth()/2;
+        viewport.getCamera().position.y = Gdx.graphics.getHeight()/2;
         tweenManager = new TweenManager();
         Tween.registerAccessor(Sprite.class, new SpriteAccessor());
 
@@ -70,7 +71,7 @@ public class MainMenuScreen implements Screen {
         Gdx.gl.glClearColor(1, 0, 0, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
-        //game.batch.setProjectionMatrix(viewport.getCamera().combined);
+        game.batch.setProjectionMatrix(viewport.getCamera().combined);
         game.batch.begin();
         game.batch.draw(img,0,0,Gdx.graphics.getWidth(),Gdx.graphics.getHeight());
         game.batch.draw(logo, Gdx.graphics.getWidth() / 2 - logo.getWidth()/2, Gdx.graphics.getHeight() / 2 + start.getHeight()/2);
