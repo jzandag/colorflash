@@ -14,14 +14,14 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.mygdx.game.MyGdxGame;
 import com.mygdx.game.chooselevels.Advanced;
-import com.mygdx.game.chooselevels.Beginner;
 import com.mygdx.game.chooselevels.Intermediate;
+import com.mygdx.game.guesslevels.Beginner;
 
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.moveTo;
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.run;
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.sequence;
 
-public class LevelsScreen  implements Screen {
+public class Guesslevel  implements Screen {
 
     private MyGdxGame game;
 
@@ -33,7 +33,7 @@ public class LevelsScreen  implements Screen {
     private TextButton backBtn;
     private Texture bg;
 
-    public LevelsScreen(final MyGdxGame game){
+    public Guesslevel (final MyGdxGame game){
         this.game = game;
         stage = new Stage();
         bg = new Texture("img/bg1.png");

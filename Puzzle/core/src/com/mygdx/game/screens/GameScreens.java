@@ -75,7 +75,6 @@ public class GameScreens {
         bg = new Texture("img/rainbow.jpg");
         questionNumber = 0;
 
-        //System.out.println("tanginaa");
         Gdx.input.setInputProcessor(stage);
         //get current question from the array of int
         currentQuestion = questions[questionNumber];
@@ -396,7 +395,7 @@ public class GameScreens {
         int count = 1;
         choiceBtns = new TextButton[]{ choice1,choice2,choice3,choice4};
         table.top();
-        table.add(query).colspan(2).center().width(Gdx.graphics.getWidth()-80).height(Gdx.graphics.getWidth()-80).padTop(200);
+        table.add(query).colspan(2).center().width(Gdx.graphics.getWidth()-80).height(Gdx.graphics.getWidth()-80).padTop(40);
         table.row();
         for(int i: btnOrder){
             table.add(choiceBtns[i]).size((Gdx.graphics.getWidth() /2), Gdx.graphics.getHeight() / 10).pad(20).spaceBottom(10).padLeft(10);

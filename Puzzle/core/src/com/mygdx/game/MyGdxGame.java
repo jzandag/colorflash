@@ -12,6 +12,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
+import com.mygdx.game.screens.Guesslevel;
 import com.mygdx.game.screens.MainMenuScreen;
 import com.mygdx.game.screens.PlayScreen;
 
@@ -41,7 +42,7 @@ public class MyGdxGame extends Game {
 		music.setVolume(0.4f);
 		music.play();
 
-		setScreen(new MainMenuScreen(this));
+		setScreen(new Guesslevel(this));
 
 	}
 

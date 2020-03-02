@@ -9,7 +9,6 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.mygdx.game.MyGdxGame;
-import com.mygdx.game.levels.Intermediate;
 import com.mygdx.game.tween.SpriteAccessor;
 
 import aurelienribon.tweenengine.BaseTween;
@@ -57,7 +56,7 @@ public class MainMenuScreen implements Screen {
                     .setCallback(new TweenCallback() {
                         @Override
                         public void onEvent(int type, BaseTween<?> source) {
-                            game.setScreen(new LevelsScreen(game));
+                            game.setScreen(new SelectScreen(game));
                         }
                     }).start(tweenManager);
         }

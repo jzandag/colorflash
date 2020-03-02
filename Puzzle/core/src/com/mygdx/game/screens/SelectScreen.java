@@ -1,5 +1,6 @@
 package com.mygdx.game.screens;
 
+
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
@@ -7,34 +8,33 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.scenes.scene2d.ui.ScrollPane;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.mygdx.game.MyGdxGame;
 import com.mygdx.game.chooselevels.Advanced;
-import com.mygdx.game.chooselevels.Beginner;
-import com.mygdx.game.chooselevels.Intermediate;
 
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.moveTo;
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.run;
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.sequence;
 
-public class LevelsScreen  implements Screen {
-
+public class SelectScreen implements Screen {
     private MyGdxGame game;
 
     private Stage stage;
     private Table table;
     private TextureAtlas atlas;
     private Skin skin;
-    private ScrollPane scrollPane;
     private TextButton backBtn;
     private Texture bg;
 
-    public LevelsScreen(final MyGdxGame game){
+    public SelectScreen(MyGdxGame game) {
         this.game = game;
+    }
+
+    @Override
+    public void show() {
         stage = new Stage();
         bg = new Texture("img/bg1.png");
         atlas = new TextureAtlas("ui/colorBtn.pack");
@@ -42,20 +42,20 @@ public class LevelsScreen  implements Screen {
 
         Table listButton;
 
-        TextButton btnBeginner = new TextButton("BEGINNER",skin, "red");
-        TextButton btnIntermediate = new TextButton("INTERMEDIATE",skin, "orange");
+        TextButton btnBeginner = new TextButton("Choose the color",skin, "red");
+        TextButton btnIntermediate = new TextButton("Guess the color",skin, "orange");
         TextButton btnAdvanced= new TextButton("ADVANCED",skin, "yellow");
 
         btnBeginner.addListener(new ClickListener(){
             @Override
             public void clicked(InputEvent event, float x, float y) {
-                game.setScreen(new Beginner(game));
+                game.setScreen(new LevelsScreen(game));
             }
         });
         btnIntermediate.addListener(new ClickListener(){
             @Override
             public void clicked(InputEvent event, float x, float y) {
-                game.setScreen(new Intermediate(game));
+                game.setScreen(new Guesslevel(game));
             }
         });
         btnAdvanced.addListener(new ClickListener(){
@@ -74,7 +74,7 @@ public class LevelsScreen  implements Screen {
                     }
                 }));
 
-                game.setScreen(new SelectScreen(game));
+                game.setScreen(new MainMenuScreen(game));
 
             }
         });
@@ -94,9 +94,7 @@ public class LevelsScreen  implements Screen {
 
         stage.addAction(sequence(moveTo(0,stage.getHeight()), moveTo(0,0,0.5f)));
 
-    }
-    @Override
-    public void show() {
+
 
     }
 
@@ -112,6 +110,8 @@ public class LevelsScreen  implements Screen {
         Gdx.input.setInputProcessor(stage);
         stage.act(delta);
         stage.draw();
+
+
     }
 
     @Override

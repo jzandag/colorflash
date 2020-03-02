@@ -83,7 +83,7 @@ public class Hud implements Disposable {
             countdownLabel = new Label(String.format("%03d", worldTimer), new Label.LabelStyle(new BitmapFont(), Color.BLACK));
         /*else if(stageNumber == 0)
             countdownLabel = new Label("NO LIMIT", new Label.LabelStyle(new BitmapFont(), Color.BLACK));*/
-            timeLabel = new Label("TIME", new Label.LabelStyle(new BitmapFont(), Color.BLACK));
+        timeLabel = new Label("TIME", new Label.LabelStyle(new BitmapFont(), Color.BLACK));
         roomLabel = new Label(MyGdxGame.TITLE, new Label.LabelStyle(new BitmapFont(), Color.BLACK));
         healthLabel = new Label(String.format("%03d", health),new Label.LabelStyle(new BitmapFont(), Color.BLACK));
         currentQuestion = new Label(String.format("%01d",progress) + "/20", new Label.LabelStyle(new BitmapFont(), Color.BLACK));
