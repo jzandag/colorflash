@@ -13,9 +13,9 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.mygdx.game.MyGdxGame;
-import com.mygdx.game.chooselevels.Advanced;
-import com.mygdx.game.chooselevels.Intermediate;
+import com.mygdx.game.guesslevels.Advanced;
 import com.mygdx.game.guesslevels.Beginner;
+import com.mygdx.game.guesslevels.Intermediate;
 
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.moveTo;
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.run;

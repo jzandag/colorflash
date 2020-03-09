@@ -59,6 +59,7 @@ public class GameScreens {
         correctHandler = new ClickListener(){
             @Override
             public void clicked(InputEvent event, float x, float y) {
+                event.getListenerActor().setVisible(false);
                 correct();
             }
         };
@@ -66,6 +67,7 @@ public class GameScreens {
         wrongHandler = new ClickListener(){
             @Override
             public void clicked(InputEvent event, float x, float y) {
+                event.getListenerActor().setVisible(false);
                 wrong();
             }
         };

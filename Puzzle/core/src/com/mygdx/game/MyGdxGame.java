@@ -42,7 +42,7 @@ public class MyGdxGame extends Game {
 		music.setVolume(0.4f);
 		music.play();
 
-		setScreen(new Guesslevel(this));
+		setScreen(new MainMenuScreen(this));
 
 	}
 

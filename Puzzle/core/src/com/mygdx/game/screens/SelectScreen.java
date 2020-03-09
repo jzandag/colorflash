@@ -44,7 +44,6 @@ public class SelectScreen implements Screen {
 
         TextButton btnBeginner = new TextButton("Choose the color",skin, "red");
         TextButton btnIntermediate = new TextButton("Guess the color",skin, "orange");
-        TextButton btnAdvanced= new TextButton("ADVANCED",skin, "yellow");
 
         btnBeginner.addListener(new ClickListener(){
             @Override
@@ -56,12 +55,6 @@ public class SelectScreen implements Screen {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 game.setScreen(new Guesslevel(game));
-            }
-        });
-        btnAdvanced.addListener(new ClickListener(){
-            @Override
-            public void clicked(InputEvent event, float x, float y) {
-                game.setScreen(new Advanced(game));
             }
         });
         backBtn = new TextButton("back", skin,"green");
@@ -85,8 +78,6 @@ public class SelectScreen implements Screen {
         table.add(btnBeginner).center().pad(50).size(Gdx.graphics.getWidth()-100, 70);
         table.row();
         table.add(btnIntermediate).center().pad(50).size(Gdx.graphics.getWidth()-100, 70);
-        table.row();
-        table.add(btnAdvanced).center().pad(50).size(Gdx.graphics.getWidth()-100, 70);
         table.row();
         table.add(backBtn);
 

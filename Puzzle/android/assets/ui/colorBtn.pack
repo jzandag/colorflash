@@ -5,30 +5,62 @@ filter: Nearest,Nearest
 repeat: none
 home
   rotate: false
-  xy: 0, 0
+  xy: 0, 32
   size: 121, 122
   orig: 121, 122
   offset: 0, 0
   index: -1
 level
   rotate: false
-  xy: 121, 0
+  xy: 121, 32
   size: 120, 122
   orig: 120, 122
   offset: 0, 0
   index: -1
 replay
   rotate: false
-  xy: 241, 0
+  xy: 241, 32
   size: 120, 122
   orig: 120, 122
   offset: 0, 0
   index: -1
 blue
   rotate: false
-  xy: 361, 90
+  xy: 0, 0
   size: 32, 32
   split: 4, 4, 5, 5
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+brown
+  rotate: false
+  xy: 361, 122
+  size: 32, 32
+  split: 7, 6, 6, 6
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+dblue
+  rotate: false
+  xy: 32, 0
+  size: 32, 32
+  split: 4, 5, 4, 4
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+gold
+  rotate: false
+  xy: 361, 90
+  size: 32, 32
+  split: 4, 5, 4, 4
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+gray
+  rotate: false
+  xy: 64, 0
+  size: 32, 32
+  split: 4, 5, 4, 5
   orig: 32, 32
   offset: 0, 0
   index: -1
@@ -40,25 +72,65 @@ green
   orig: 32, 32
   offset: 0, 0
   index: -1
+lightblue
+  rotate: false
+  xy: 96, 0
+  size: 32, 32
+  split: 5, 6, 6, 6
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+lightgreen
+  rotate: false
+  xy: 128, 0
+  size: 32, 32
+  split: 5, 5, 5, 5
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+lilac
+  rotate: false
+  xy: 160, 0
+  size: 32, 32
+  split: 5, 5, 4, 5
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
 orange
   rotate: false
-  xy: 393, 90
+  xy: 192, 0
   size: 32, 32
   split: 3, 3, 5, 5
   orig: 32, 32
   offset: 0, 0
   index: -1
+pink
+  rotate: false
+  xy: 224, 0
+  size: 32, 32
+  split: 5, 6, 5, 5
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
 red
   rotate: false
-  xy: 361, 26
+  xy: 256, 0
   size: 32, 32
   split: 4, 5, 6, 5
   orig: 32, 32
   offset: 0, 0
   index: -1
+skyblue
+  rotate: false
+  xy: 288, 0
+  size: 32, 32
+  split: 4, 4, 4, 4
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
 violet
   rotate: false
-  xy: 393, 58
+  xy: 320, 0
   size: 32, 32
   split: 4, 4, 4, 5
   orig: 32, 32
@@ -66,7 +138,7 @@ violet
   index: -1
 yellow
   rotate: false
-  xy: 393, 26
+  xy: 361, 26
   size: 32, 32
   split: 4, 5, 4, 4
   orig: 32, 32

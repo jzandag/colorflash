@@ -18,7 +18,16 @@
         "blue": { "up":  "blue", "down":  "blue", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"},
         "yellow": { "up":  "yellow", "down":  "yellow", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"},
         "green": { "up":  "green", "down":  "green", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"},
-        "violet": { "up":  "violet", "down":  "violet", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"}
+        "violet": { "up":  "violet", "down":  "violet", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"},
+        "lightblue": { "up":  "lightblue", "down":  "lightblue", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"},
+        "pink": { "up":  "pink", "down":  "pink", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"},
+        "brown": { "up":  "brown", "down":  "brown", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"},
+        "lightgreen": { "up":  "lightgreen", "down":  "lightgreen", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"},
+        "skyblue": { "up":  "skyblue", "down":  "skyblue", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"},
+        "lilac": { "up":  "lilac", "down":  "lilac", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"},
+        "gold": { "up":  "gold", "down":  "gold", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"},
+        "dblue": { "up":  "dblue", "down":  "dblue", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"},
+        "gray": { "up":  "gray", "down":  "gray", "pressedOffsetX": 1, "pressedOffsetY": -1, "font": "yoshiB32"}
     },
     "com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle": {
         "home": { "up": "home"},
