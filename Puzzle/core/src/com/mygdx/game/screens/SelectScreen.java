@@ -75,9 +75,9 @@ public class SelectScreen implements Screen {
         table.setBounds(0,0,Gdx.graphics.getWidth(),Gdx.graphics.getHeight());
         table.setFillParent(true);
         //put stuff together
-        table.add(btnBeginner).center().pad(50).size(Gdx.graphics.getWidth()-100, 70);
+        table.add(btnBeginner).center().pad(50).size(Gdx.graphics.getWidth()-100, Gdx.graphics.getHeight() / 5);
         table.row();
-        table.add(btnIntermediate).center().pad(50).size(Gdx.graphics.getWidth()-100, 70);
+        table.add(btnIntermediate).center().pad(50).size(Gdx.graphics.getWidth()-100, Gdx.graphics.getHeight() / 5);
         table.row();
         table.add(backBtn);
 

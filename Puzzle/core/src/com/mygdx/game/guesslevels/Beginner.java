@@ -48,7 +48,7 @@ public class Beginner extends GuessScreens implements Screen {
     @Override
     public void show() {
         super.show();
-        getQuestion(2);
+        getQuestion(currentQuestion);
         setUpChoices(btnOrder);
     }
 
@@ -713,8 +713,7 @@ public class Beginner extends GuessScreens implements Screen {
             hud.isFinished = true;
         if(hud.isFinished){
             hud.timerStop = true;
-//            if(!hud.isWin)
-//
+
             if(!hud.isWin && hud.health >0 && hud.tune) {
                 MyGdxGame.assets.get("audio/fail.wav", Sound.class).play();
                 hud.tune=false;
@@ -757,22 +756,18 @@ public class Beginner extends GuessScreens implements Screen {
     private void correct(){
         health++;
 
+        MyGdxGame.assets.get("audio/bell.wav", Sound.class).play();
+        hud.setProgress(hud.getProgress()+1);
         if(health == 1){
             if(hud.progress < 20 ){
                 updateTable();
-                hud.setProgress(hud.getProgress()+1);
-                //System.out.println("correct");
-                MyGdxGame.assets.get("audio/bell.wav", Sound.class).play();
                 health = 0;
             }
             else if (hud.progress == 20){
                 MyGdxGame.assets.get("audio/result.mp3", Sound.class).play();
                 hud.isFinished = true;
                 hud.isWin = true;
-
             }
-        }else{
-
         }
 
     }

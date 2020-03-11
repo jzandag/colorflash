@@ -9,10 +9,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.Window;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.mygdx.game.MyGdxGame;
-import com.mygdx.game.chooselevels.Advanced;
-import com.mygdx.game.screens.GameScreens;
 import com.mygdx.game.screens.GuessScreens;
-import com.mygdx.game.screens.LevelsScreen;
+import com.mygdx.game.screens.Guesslevel;
 import com.mygdx.game.screens.MainMenuScreen;
 
 
@@ -49,7 +47,7 @@ public class LevelClearGuess {
         levelBtn.addListener(new ClickListener(){
             @Override
             public void clicked(InputEvent event, float x, float y) {
-                game.setScreen(new LevelsScreen(game));
+                game.setScreen(new Guesslevel(game));
             }
         });
 
