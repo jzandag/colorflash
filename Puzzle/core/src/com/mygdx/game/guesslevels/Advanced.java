@@ -120,7 +120,7 @@ public class Advanced extends GuessScreens implements Screen {
                 break;
             case 4:
                 /*System.out.println("Burger King");*/
-                query = new Image(new Texture("img/logo3/burgerking.png"));
+                query = new Image(new Texture("img/logo3/burgerking..png"));
                 choice1 = new TextButton(" ", skin, "blue");
                 choice1.addListener(correctHandler);
                 choice2 = new TextButton(" ", skin, "red");
@@ -151,13 +151,13 @@ public class Advanced extends GuessScreens implements Screen {
                 choice3.addListener(correctHandler);
                 choice4 = new TextButton(" ", skin, "yellow");
                 choice4.addListener(wrongHandler);
-                choice5 = new TextButton(" ", skin, "orange");
+                choice5 = new TextButton(" ", skin, "blue");
                 choice5.addListener(wrongHandler);
                 choice6 = new TextButton(" ", skin, "gold");
                 choice6.addListener(wrongHandler);
                 choice7 = new TextButton(" ", skin, "pink");
                 choice7.addListener(wrongHandler);
-                choice8 = new TextButton(" ", skin, "violet");
+                choice8 = new TextButton(" ", skin, "lightgreen");
                 choice8.addListener(wrongHandler);
                 break;
             case 6:
@@ -214,7 +214,7 @@ public class Advanced extends GuessScreens implements Screen {
                 //random colors
                 choice4 = new TextButton(" ", skin, "blue");
                 choice4.addListener(wrongHandler);
-                choice5 = new TextButton(" ", skin, "red");
+                choice5 = new TextButton(" ", skin, "gold");
                 choice5.addListener(wrongHandler);
                 choice6 = new TextButton(" ", skin, "skyblue");
                 choice6.addListener(wrongHandler);
@@ -260,7 +260,7 @@ public class Advanced extends GuessScreens implements Screen {
                 choice5.addListener(wrongHandler);
                 choice6 = new TextButton(" ", skin, "gray");
                 choice6.addListener(wrongHandler);
-                choice7 = new TextButton(" ", skin, "violet");
+                choice7 = new TextButton(" ", skin, "gold");
                 choice7.addListener(wrongHandler);
                 choice8 = new TextButton(" ", skin, "brown");
                 choice8.addListener(wrongHandler);
@@ -283,7 +283,7 @@ public class Advanced extends GuessScreens implements Screen {
                 choice6.addListener(wrongHandler);
                 choice7 = new TextButton(" ", skin, "lilac");
                 choice7.addListener(wrongHandler);
-                choice8 = new TextButton(" ", skin, "violet");
+                choice8 = new TextButton(" ", skin, "gold");
                 choice8.addListener(wrongHandler);
                 break;
             case 12:
@@ -317,7 +317,7 @@ public class Advanced extends GuessScreens implements Screen {
                 choice3 = new TextButton(" ", skin, "yellow");
                 choice3.addListener(correctHandler);
                 //random colors
-                choice4 = new TextButton(" ", skin, "lilac");
+                choice4 = new TextButton(" ", skin, "lightgreen");
                 choice4.addListener(wrongHandler);
                 choice5 = new TextButton(" ", skin, "pink");
                 choice5.addListener(wrongHandler);
@@ -382,9 +382,9 @@ public class Advanced extends GuessScreens implements Screen {
                 //random colors
                 choice4 = new TextButton(" ", skin, "blue");
                 choice4.addListener(wrongHandler);
-                choice5 = new TextButton(" ", skin, "red");
+                choice5 = new TextButton(" ", skin, "pink");
                 choice5.addListener(wrongHandler);
-                choice6 = new TextButton(" ", skin, "green");
+                choice6 = new TextButton(" ", skin, "lightgreen");
                 choice6.addListener(wrongHandler);
                 choice7 = new TextButton(" ", skin, "dblue");
                 choice7.addListener(wrongHandler);
@@ -403,7 +403,7 @@ public class Advanced extends GuessScreens implements Screen {
                 //random colors
                 choice4 = new TextButton(" ", skin, "lilac");
                 choice4.addListener(wrongHandler);
-                choice5 = new TextButton(" ", skin, "red");
+                choice5 = new TextButton(" ", skin, "pink");
                 choice5.addListener(wrongHandler);
                 choice6 = new TextButton(" ", skin, "green");
                 choice6.addListener(wrongHandler);
@@ -445,7 +445,7 @@ public class Advanced extends GuessScreens implements Screen {
                 //random colors
                 choice4 = new TextButton(" ", skin, "blue");
                 choice4.addListener(wrongHandler);
-                choice5 = new TextButton(" ", skin, "red");
+                choice5 = new TextButton(" ", skin, "gold");
                 choice5.addListener(wrongHandler);
                 choice6 = new TextButton(" ", skin, "dblue");
                 choice6.addListener(wrongHandler);
@@ -487,7 +487,7 @@ public class Advanced extends GuessScreens implements Screen {
                 //random colors
                 choice4 = new TextButton(" ", skin, "pink");
                 choice4.addListener(wrongHandler);
-                choice5 = new TextButton(" ", skin, "red");
+                choice5 = new TextButton(" ", skin, "gold");
                 choice5.addListener(wrongHandler);
                 choice6 = new TextButton(" ", skin, "lightgreen");
                 choice6.addListener(wrongHandler);
@@ -529,7 +529,7 @@ public class Advanced extends GuessScreens implements Screen {
                 //random colors
                 choice4 = new TextButton(" ", skin, "pink");
                 choice4.addListener(wrongHandler);
-                choice5 = new TextButton(" ", skin, "red");
+                choice5 = new TextButton(" ", skin, "lightgreen");
                 choice5.addListener(wrongHandler);
                 choice6 = new TextButton(" ", skin, "blue");
                 choice6.addListener(wrongHandler);
@@ -550,7 +550,7 @@ public class Advanced extends GuessScreens implements Screen {
                 //random colors
                 choice4 = new TextButton(" ", skin, "gray");
                 choice4.addListener(wrongHandler);
-                choice5 = new TextButton(" ", skin, "red");
+                choice5 = new TextButton(" ", skin, "gold");
                 choice5.addListener(wrongHandler);
                 choice6 = new TextButton(" ", skin, "green");
                 choice6.addListener(wrongHandler);
@@ -592,7 +592,7 @@ public class Advanced extends GuessScreens implements Screen {
                 //random colors
                 choice4 = new TextButton(" ", skin, "violet");
                 choice4.addListener(wrongHandler);
-                choice5 = new TextButton(" ", skin, "red");
+                choice5 = new TextButton(" ", skin, "gray");
                 choice5.addListener(wrongHandler);
                 choice6 = new TextButton(" ", skin, "blue");
                 choice6.addListener(wrongHandler);
@@ -640,7 +640,7 @@ public class Advanced extends GuessScreens implements Screen {
                 choice6.addListener(wrongHandler);
                 choice7 = new TextButton(" ", skin, "lightgreen");
                 choice7.addListener(wrongHandler);
-                choice8 = new TextButton(" ", skin, "skyblue");
+                choice8 = new TextButton(" ", skin, "blue");
                 choice8.addListener(wrongHandler);
                 break;
             case 29:

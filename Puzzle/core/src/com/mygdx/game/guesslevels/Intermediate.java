@@ -69,9 +69,9 @@ public class Intermediate extends GuessScreens implements Screen {
                 choice4.addListener(wrongHandler);
                 choice5 = new TextButton(" ", skin, "blue");
                 choice5.addListener(wrongHandler);
-                choice6 = new TextButton(" ", skin, "lightgreen");
+                choice6 = new TextButton(" ", skin, "dblue");
                 choice6.addListener(wrongHandler);
-                choice7 = new TextButton(" ", skin, "green");
+                choice7 = new TextButton(" ", skin, "pink");
                 choice7.addListener(wrongHandler);
                 choice8 = new TextButton(" ", skin, "violet");
                 choice8.addListener(wrongHandler);
@@ -252,7 +252,7 @@ public class Intermediate extends GuessScreens implements Screen {
                 //random colors
                 choice2 = new TextButton(" ", skin, "yellow");
                 choice2.addListener(correctHandler);
-                choice3 = new TextButton(" ", skin, "blue");
+                choice3 = new TextButton(" ", skin, "dblue");
                 choice3.addListener(wrongHandler);
                 choice4 = new TextButton(" ", skin, "pink");
                 choice4.addListener(wrongHandler);
@@ -281,7 +281,7 @@ public class Intermediate extends GuessScreens implements Screen {
                 choice5.addListener(wrongHandler);
                 choice6 = new TextButton(" ", skin, "pink");
                 choice6.addListener(wrongHandler);
-                choice7 = new TextButton(" ", skin, "green");
+                choice7 = new TextButton(" ", skin, "lightgreen");
                 choice7.addListener(wrongHandler);
                 choice8 = new TextButton(" ", skin, "violet");
                 choice8.addListener(wrongHandler);
@@ -309,7 +309,7 @@ public class Intermediate extends GuessScreens implements Screen {
                 break;
             case 13:
                 /*System.out.println("kraft");*/
-                query = new Image(new Texture("img/logo2/ford.png"));
+                query = new Image(new Texture("img/logo2/kraft.png"));
                 choice1 = new TextButton(" ", skin, "blue");
                 choice1.addListener(correctHandler);
                 //random colors
@@ -424,7 +424,7 @@ public class Intermediate extends GuessScreens implements Screen {
                 choice3.addListener(wrongHandler);
                 choice4 = new TextButton(" ", skin, "skyblue");
                 choice4.addListener(wrongHandler);
-                choice5 = new TextButton(" ", skin, "red");
+                choice5 = new TextButton(" ", skin, "pink");
                 choice5.addListener(wrongHandler);
                 choice6 = new TextButton(" ", skin, "dblue");
                 choice6.addListener(wrongHandler);
@@ -456,7 +456,7 @@ public class Intermediate extends GuessScreens implements Screen {
                 break;
             case 20:
                 /*System.out.println("pepsi");*/
-                query = new Image(new Texture("img/logo2/peps.png"));
+                query = new Image(new Texture("img/logo2/pepsi.png"));
                 choice1 = new TextButton(" ", skin, "blue");
                 choice1.addListener(correctHandler);
                 //random colors

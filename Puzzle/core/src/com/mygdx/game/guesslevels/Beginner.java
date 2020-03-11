@@ -88,7 +88,7 @@ public class Beginner extends GuessScreens implements Screen {
                 choice3.addListener(wrongHandler);
                 choice4 = new TextButton(" ", skin, "yellow");
                 choice4.addListener(wrongHandler);
-                choice5 = new TextButton(" ", skin, "orange");
+                choice5 = new TextButton(" ", skin, "pink");
                 choice5.addListener(wrongHandler);
                 choice6 = new TextButton(" ", skin, "lilac");
                 choice6.addListener(wrongHandler);
@@ -130,7 +130,7 @@ public class Beginner extends GuessScreens implements Screen {
                 choice3.addListener(wrongHandler);
                 choice4 = new TextButton(" ", skin, "yellow");
                 choice4.addListener(wrongHandler);
-                choice5 = new TextButton(" ", skin, "orange");
+                choice5 = new TextButton(" ", skin, "brown");
                 choice5.addListener(wrongHandler);
                 choice6 = new TextButton(" ", skin, "dblue");
                 choice6.addListener(wrongHandler);
@@ -151,7 +151,7 @@ public class Beginner extends GuessScreens implements Screen {
                 choice3.addListener(wrongHandler);
                 choice4 = new TextButton(" ", skin, "yellow");
                 choice4.addListener(wrongHandler);
-                choice5 = new TextButton(" ", skin, "orange");
+                choice5 = new TextButton(" ", skin, "gold");
                 choice5.addListener(wrongHandler);
                 choice6 = new TextButton(" ", skin, "brown");
                 choice6.addListener(wrongHandler);
